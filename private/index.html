@@ -32,6 +32,14 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 <style>.acuity-frame{display:block;width:100%;height:900px;border:0;background:#F4EDE2;border-radius:2px}@media (max-width:640px){.acuity-frame{height:1150px}}</style>
 <style>.pv-card{display:flex;flex-direction:column;gap:8px;height:100%;box-sizing:border-box;background:#F4EDE2;border-radius:0;padding:28px 24px;color:#504D42}</style>
 <style>.ws-card{display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;background:#F4EDE2;border:1.5px solid #F4EDE2;border-radius:2px;padding:28px 24px;color:#504D42;text-decoration:none;transition:border-color .15s ease,transform .15s ease}.ws-card:hover{border-color:#A94F2C;color:#504D42}.ws-card:focus-visible{outline:2px solid #504D42;outline-offset:2px}.ws-cta{margin-top:10px;font-size:16px;font-weight:500;color:#A94F2C;text-decoration:underline;text-underline-offset:4px}@media (prefers-reduced-motion: no-preference){.ws-card:hover{transform:translateY(-2px)}}</style>
+<style id="bloom-patterns">
+.pat{position:relative;isolation:isolate}
+.pat::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-size:cover}
+.pat-leaves-dark::before{background-image:url(/images/pattern-leaves-dark.webp);background-position:center}
+.pat-leaves-light::before{background-image:url(/images/pattern-leaves-light.webp);background-position:center}
+.pat-shapes-dark::before{background-image:url(/images/pattern-shapes-dark.webp);background-position:center bottom}
+.pat-shapes-light::before{background-image:url(/images/pattern-shapes-light.webp);background-position:center bottom}
+</style>
 </head>
 <body>
 <div style="width:100%;background:#F4EDE2;color:#504D42;font-family:&quot;Avenir Next&quot;,&quot;DM Sans&quot;,system-ui,sans-serif;font-size:18px;line-height:1.6">
@@ -68,7 +76,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 
 <main>
   <!-- Private yoga -->
-  <section id="private" style="background:#A2AEA0;color:#33312A">
+  <section class="pat pat-shapes-dark" id="private" style="background:#A2AEA0;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;gap:48px">
       <div style="display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-start">
       <div style="flex:1 1 420px;min-width:0;max-width:40em">
@@ -100,7 +108,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Why private -->
-  <section id="why" style="background:#A5BDC4;color:#33312A">
+  <section class="pat pat-shapes-dark" id="why" style="background:#A5BDC4;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px">
       <div>
         <p style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.01em;color:#33312A">Made for you</p>
@@ -136,7 +144,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Booking strip -->
-  <section style="background:#E7C6BD;color:#33312A">
+  <section class="pat pat-leaves-dark" style="background:#E7C6BD;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:56px 24px;display:flex;flex-direction:column;gap:16px">
       <div style="display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between">
         <p style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:clamp(22px,2.4vw,28px);line-height:1.3">$120 per session · or $100 a week on the weekly plan<br><span style="font-family:&quot;Avenir Next&quot;,&quot;DM Sans&quot;,system-ui,sans-serif;font-size:16px">One-on-one with Selin · 2/11 Westland Place, West Ballina</span></p>
@@ -150,7 +158,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Final invitation -->
-  <section id="contact" style="background:#A94F2C;color:#F4EDE2">
+  <section class="pat pat-leaves-light" id="contact" style="background:#A94F2C;color:#F4EDE2">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
       <img src="/images/bloom-logo-cream.svg" alt="Bloom Yoga Ballina" style="width:240px;height:auto;object-fit:contain">
       <h2 style="margin:16px 0 0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(32px,4vw,48px);line-height:1.1">Come for the yoga. Stay for the company.</h2>

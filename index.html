@@ -30,6 +30,14 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 <style>.btn-green{background:#A2AEA0;color:#33312A;border-color:#A2AEA0}.btn-green:hover{background:#B5BFB3;border-color:#B5BFB3;color:#33312A}.btn-on-green{color:#33312A!important;background:#FAFBF9!important;border-color:#FAFBF9!important}.btn-on-green:hover{background:#E8ECE6!important;border-color:#E8ECE6!important}</style>
 <style>.btn-green-outline{background:transparent;color:#33312A;border-color:#A2AEA0}.btn-green-outline:hover{background:#A2AEA0;color:#33312A;border-color:#A2AEA0}</style>
 <style>.btn-dark{background:#504D42;color:#FAFBF9;border-color:#504D42}.btn-dark:hover{background:#33312A;border-color:#33312A;color:#FAFBF9}</style>
+<style id="bloom-patterns">
+.pat{position:relative;isolation:isolate}
+.pat::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-size:cover}
+.pat-leaves-dark::before{background-image:url(/images/pattern-leaves-dark.webp);background-position:center}
+.pat-leaves-light::before{background-image:url(/images/pattern-leaves-light.webp);background-position:center}
+.pat-shapes-dark::before{background-image:url(/images/pattern-shapes-dark.webp);background-position:center bottom}
+.pat-shapes-light::before{background-image:url(/images/pattern-shapes-light.webp);background-position:center bottom}
+</style>
 </head>
 <body>
 <div style="width:100%;background:#F4EDE2;color:#504D42;font-family:&quot;Avenir Next&quot;,&quot;DM Sans&quot;,system-ui,sans-serif;font-size:18px;line-height:1.6">
@@ -65,7 +73,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </header>
 
   <!-- Launch announcement -->
-  <section id="launch" aria-label="Opening February 2027" style="background:#A5BDC4;color:#33312A">
+  <section class="pat pat-shapes-dark" id="launch" aria-label="Opening February 2027" style="background:#A5BDC4;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:40px 24px;display:flex;flex-wrap:wrap;gap:20px 48px;align-items:center;justify-content:space-between">
       <div style="flex:1 1 480px;min-width:0">
         <p style="margin:0;font-size:14px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase">Coming soon</p>
@@ -101,7 +109,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- First class / intro offer -->
-  <section style="background:#A94F2C;color:#F4EDE2">
+  <section class="pat pat-leaves-light" style="background:#A94F2C;color:#F4EDE2">
     <div style="max-width:1200px;margin:0 auto;padding:56px 24px;display:flex;flex-wrap:wrap;gap:24px 56px;align-items:center;justify-content:space-between">
       <div style="flex:1 1 520px;min-width:0">
         <p style="margin:0 0 8px;font-size:19px;font-weight:500;letter-spacing:0.01em">Your first class at Bloom</p>
@@ -121,7 +129,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </div>
 
   <!-- Yoga -->
-  <section id="yoga" style="background:#E7C6BD">
+  <section class="pat pat-leaves-dark" id="yoga" style="background:#E7C6BD">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;gap:40px">
       <div style="display:flex;flex-wrap:wrap;gap:24px 56px;align-items:end;justify-content:space-between">
         <div style="flex:1 1 480px;min-width:0">
@@ -224,7 +232,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" style="background:#A2AEA0;color:#33312A">
+  <section class="pat pat-shapes-dark" id="pricing" style="background:#A2AEA0;color:#33312A">
   <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;gap:48px">
     <div style="display:flex;flex-wrap:wrap;gap:32px 56px;align-items:center">
     <div style="flex:1 1 420px;min-width:0;max-width:40em">
@@ -275,7 +283,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Studio -->
-  <section id="studio" style="background:#504D42;color:#F4EDE2">
+  <section class="pat pat-leaves-light" id="studio" style="background:#504D42;color:#F4EDE2">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
       <div style="flex:1 1 440px;min-width:0;max-width:40em">
         <p style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.01em">The Studio</p>
@@ -291,7 +299,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Find us -->
-  <section id="find-us" aria-label="Find the studio" style="background:#F4EDE2;color:#33312A">
+  <section class="pat pat-shapes-dark" id="find-us" aria-label="Find the studio" style="background:#F4EDE2;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-wrap:wrap;gap:40px 56px;align-items:center">
       <div style="flex:1 1 320px;min-width:0;max-width:30em">
         <p style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.01em;color:#504D42">Find us</p>
@@ -325,7 +333,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Email list -->
-  <section style="background:#A5BDC4;color:#33312A">
+  <section class="pat pat-shapes-dark" style="background:#A5BDC4;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:80px 24px;display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between">
       <div style="flex:1 1 480px;min-width:0">
         <h2 style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(28px,3vw,36px);line-height:1.2;color:#33312A">Stay in the loop.</h2>
@@ -336,7 +344,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Final invitation -->
-  <section id="contact" style="background:#A94F2C;color:#F4EDE2">
+  <section class="pat pat-leaves-light" id="contact" style="background:#A94F2C;color:#F4EDE2">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
       <img src="images/bloom-logo-cream.svg" alt="Bloom Yoga Ballina" style="width:240px;height:auto;object-fit:contain">
       <h2 style="margin:16px 0 0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(32px,4vw,48px);line-height:1.1">Come for the yoga. Stay for the company.</h2>

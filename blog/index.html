@@ -28,6 +28,14 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 </style>
 <style>.post-card{display:flex;flex-direction:column;gap:10px;height:100%;box-sizing:border-box;background:#F4EDE2;border:1.5px solid #F4EDE2;border-radius:2px;padding:16px 16px 24px;color:#504D42;text-decoration:none;transition:border-color .15s ease}.post-card:hover{border-color:#A94F2C;color:#504D42}.post-card:focus-visible{outline:2px solid #504D42;outline-offset:2px}.post-more{margin-top:auto;font-weight:500;color:#A94F2C;text-decoration:underline;text-underline-offset:4px}</style>
 <style>.post-card h2{color:inherit!important}.pc-green{background:#A2AEA0;border-color:#A2AEA0;color:#33312A}.pc-blue{background:#A5BDC4;border-color:#A5BDC4;color:#33312A}.pc-terra{background:#A94F2C;border-color:#A94F2C;color:#F4EDE2}.pc-dark{background:#504D42;border-color:#504D42;color:#F4EDE2}.pc-green .post-more,.pc-blue .post-more{color:#33312A}.pc-terra .post-more,.pc-dark .post-more{color:#F4EDE2}.pc-green:hover,.pc-blue:hover{border-color:#33312A;color:#33312A}.pc-terra:hover,.pc-dark:hover{border-color:#F4EDE2;color:#F4EDE2}</style>
+<style id="bloom-patterns">
+.pat{position:relative;isolation:isolate}
+.pat::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-size:cover}
+.pat-leaves-dark::before{background-image:url(/images/pattern-leaves-dark.webp);background-position:center}
+.pat-leaves-light::before{background-image:url(/images/pattern-leaves-light.webp);background-position:center}
+.pat-shapes-dark::before{background-image:url(/images/pattern-shapes-dark.webp);background-position:center bottom}
+.pat-shapes-light::before{background-image:url(/images/pattern-shapes-light.webp);background-position:center bottom}
+</style>
 </head>
 <body>
 <div style="width:100%;background:#F4EDE2;color:#504D42;font-family:&quot;Avenir Next&quot;,&quot;DM Sans&quot;,system-ui,sans-serif;font-size:18px;line-height:1.6">
@@ -64,7 +72,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 
 <main>
   <!-- Blog -->
-  <section id="blog" style="background:#E7C6BD">
+  <section class="pat pat-leaves-dark" id="blog" style="background:#E7C6BD">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;gap:40px">
       <div style="max-width:40em">
         <h1 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.01em;color:#504D42">Blog</h1>
@@ -101,7 +109,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Final invitation -->
-  <section id="contact" style="background:#A94F2C;color:#F4EDE2">
+  <section class="pat pat-leaves-light" id="contact" style="background:#A94F2C;color:#F4EDE2">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
       <img src="/images/bloom-logo-cream.svg" alt="Bloom Yoga Ballina" style="width:240px;height:auto;object-fit:contain">
       <h2 style="margin:16px 0 0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(32px,4vw,48px);line-height:1.1">Come for the yoga. Stay for the company.</h2>
