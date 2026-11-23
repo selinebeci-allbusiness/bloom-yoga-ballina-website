@@ -34,7 +34,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 <style>.ws-card{display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;background:#F4EDE2;border:1.5px solid #F4EDE2;border-radius:2px;padding:28px 24px;color:#504D42;text-decoration:none;transition:border-color .15s ease,transform .15s ease}.ws-card:hover{border-color:#A94F2C;color:#504D42}.ws-card:focus-visible{outline:2px solid #504D42;outline-offset:2px}.ws-cta{margin-top:10px;font-size:16px;font-weight:500;color:#A94F2C;text-decoration:underline;text-underline-offset:4px}@media (prefers-reduced-motion: no-preference){.ws-card:hover{transform:translateY(-2px)}}</style>
 <style id="bloom-patterns">
 .pat{position:relative;isolation:isolate}
-.pat::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-size:cover}
+.pat::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-size:cover;opacity:.6}
 .pat-leaves-dark::before{background-image:url(/images/pattern-leaves-dark.webp);background-position:center}
 .pat-leaves-light::before{background-image:url(/images/pattern-leaves-light.webp);background-position:center}
 .pat-shapes-dark::before{background-image:url(/images/pattern-shapes-dark.webp);background-position:center bottom}
@@ -76,7 +76,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 
 <main>
   <!-- Free first class -->
-  <section class="pat pat-leaves-dark" id="free-class" style="background:#E7C6BD;color:#33312A">
+  <section id="free-class" style="background:#E7C6BD;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px">
       <div style="display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-start">
       <div style="flex:1 1 420px;min-width:0;max-width:40em">
@@ -141,7 +141,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Final invitation -->
-  <section class="pat pat-leaves-light" id="contact" style="background:#A94F2C;color:#F4EDE2">
+  <section id="contact" style="background:#A94F2C;color:#F4EDE2">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px">
       <img src="/images/bloom-logo-cream.svg" alt="Bloom Yoga Ballina" style="width:240px;height:auto;object-fit:contain">
       <h2 style="margin:16px 0 0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(32px,4vw,48px);line-height:1.1">Come for the yoga. Stay for the company.</h2>
