@@ -37,6 +37,8 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 .pat-leaves-light::before{background-image:url(/images/pattern-leaves-light.webp);background-position:center}
 .pat-shapes-dark::before{background-image:url(/images/pattern-shapes-dark.webp);background-position:center bottom}
 .pat-shapes-light::before{background-image:url(/images/pattern-shapes-light.webp);background-position:center bottom}
+.pat-full::before{left:50%;right:auto;width:100vw;transform:translateX(-50%)}
+body{overflow-x:clip}
 </style>
 </head>
 <body>
@@ -272,7 +274,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   </section>
 
   <!-- Community -->
-  <section id="community" style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px">
+  <section class="pat pat-leaves-dark pat-full" id="community" style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px">
     <p style="margin:0;font-size:19px;font-weight:500;letter-spacing:0.01em;color:#A94F2C">Community</p>
     <h2 style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(30px,3.4vw,40px);line-height:1.15;color:#A94F2C">Where familiar faces become friends.</h2>
     <p style="margin:0;max-width:34em">The class is only part of it. Over the weeks, the people on the mats beside you become familiar faces, and a little backyard studio becomes a community.</p>
