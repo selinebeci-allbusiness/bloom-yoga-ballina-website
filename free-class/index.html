@@ -39,6 +39,8 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 .pat-leaves-light::before{background-image:url(/images/pattern-leaves-light.webp);background-position:center}
 .pat-shapes-dark::before{background-image:url(/images/pattern-shapes-dark.webp);background-position:center bottom}
 .pat-shapes-light::before{background-image:url(/images/pattern-shapes-light.webp);background-position:center bottom}
+.pat-full::before{left:50%;right:auto;width:100vw;transform:translateX(-50%)}
+body{overflow-x:clip}
 </style>
 </head>
 <body>
@@ -76,7 +78,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 
 <main>
   <!-- Free first class -->
-  <section id="free-class" style="background:#E7C6BD;color:#33312A">
+  <section class="pat pat-leaves-dark" id="free-class" style="background:#E7C6BD;color:#33312A">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px">
       <div style="display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-start">
       <div style="flex:1 1 420px;min-width:0;max-width:40em">
